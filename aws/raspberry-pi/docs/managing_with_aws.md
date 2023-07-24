@@ -23,3 +23,8 @@ sudo /snap/amazon-ssm-agent/current/amazon-ssm-agent -register -code "activation
 sudo systemctl start snap.amazon-ssm-agent.amazon-ssm-agent.service
 ```
 7. You're done!
+
+From here you should be able to do standard connects like:
+```sh
+aws ssm start-session --target <target instance>
+```

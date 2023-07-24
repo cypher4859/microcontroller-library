@@ -13,6 +13,8 @@ sudo aws deploy install --override-config --config-file /etc/codedeploy-agent/co
 # OPTIONAL: Fallback to install missing dependencies
 sudo apt-get install ruby
 sudo wget https://aws-codedeploy-us-west-2.s3.amazonaws.com/latest/install
+sudo chmod +x ./install
+sudo ./install auto
 
 # Diagnostic
 sudo service codedeploy-agent status
